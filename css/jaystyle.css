@@ -1,0 +1,102 @@
+
+.startplay {
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #4e59af;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}​
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0 px;
+	border: 0;
+	overflow: hidden;
+	display: block;
+}
+
+h1 {
+	text-align: center;
+}
+h2 {
+	text-align: center;
+}
+h3 {
+	text-align: center;
+}
+
+
+.canvasGameClass {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#canvasGameId {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+div.YouWinDiv {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text: center;
+}
+
+img.make-it-fit {
+	max-width: 99%;
+	max-height: 80%;
+	padding-top: 40px;
+	padding-left: 10%;
+}
+
+.flex-container {
+	display: flex;
+	flex-flow: column;
+	flex: none;
+	background-color: lightgrey;
+}
+
+.flex-item {
+	display: flex;
+	height: auto;
+	margin: 5px;
+	font: 24px arial, sans-serif;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.flex-item-smaller {
+	display: flex;
+	height: auto;
+	margin: 5px;
+	font: 18px arial, sans-serif;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+.flex-pix {
+	display: flex;
+	flex: auto;
+	margin: 5px;
+}
+
+
+

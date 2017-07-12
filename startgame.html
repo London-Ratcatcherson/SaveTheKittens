@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="keywords" content="Save the kittens! game">
+		<meta name="description" content="Save the kittens! game">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>Save the kittens!</title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/jaystyle.css">
+
+		<style>
+			html  {
+				width: 100%;
+				height: 100%;
+				margin: 0 px;
+				border: 0;
+				overflow: hidden;
+				display: block;
+			}
+		</style>
+	</head>
+
+	<body id="theBody" margin="0" >
+		<canvas id="canvasGameId" tabindex="1" ></canvas>
+		<audio id="audioPlayerId" preload="auto" controls="false" autoplay="autoplay">
+			<source src="audio/Hill02_Ringtone_ClintonLaugh.mp3" />
+		</audio>
+		<script src="js/game.js"></script>
+		<script>
+			playGame();
+		</script>
+		<noscript>Sorry, you need JavaScript to play!</noscript>
+	</body>
+</html>

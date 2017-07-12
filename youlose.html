@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="keywords" content="Save the kittens! game">
+		<meta name="description" content="Save the kittens! game">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<title>You lost .... </title>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="stylesheet" type="text/css" href="css/jaystyle.css">
+	</head>
+	
+	<body>
+		<div class="flex-container">
+			<div class="flex-item">The kittens were grabbed ...</div>
+			<div class="flex-item-smaller">
+				<p id="showScore">
+			</div>
+			<div class="flex-item">
+				<a class="startplay" href="startgame.html" role="button" >Again?</a>
+			</div>
+			<div class="flex-pix">
+				<img src="img/Hitler_Snafu.jpg" height="300px"/>
+			</div>
+		</div>
+		<noscript>Sorry, you need JavaScript to play!</noscript>
+	</body>
+
+	<script>
+		// Show the score
+		var player = getParameterByName('player');
+		var opponent = getParameterByName('opponent');
+		var theScore = "Rescued: " + player + " Grabbed: " + opponent; 
+		document.getElementById("showScore").innerHTML = theScore;
+		
+		function getParameterByName(name, url) {
+			if (!url) url = window.location.href;
+			name = name.replace(/[\[\]]/g, "\\$&");
+			var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+				results = regex.exec(url);
+			if (!results) return null;
+			if (!results[2]) return '';
+			return decodeURIComponent(results[2].replace(/\+/g, " "));
+		}
+
+	</script>
+</html>
+
